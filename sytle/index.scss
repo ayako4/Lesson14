@@ -42,8 +42,9 @@ $btn-font: $sub-fontfamily;
             background-color: $btn-color;
             font-family: $btn-font;
             box-shadow: none;
-            :hover {
+            &:hover {
                background-color: $compliment-color;
+               color: $accent-color;
             }
          }
       }
@@ -97,6 +98,10 @@ $btn-font: $sub-fontfamily;
             width: 12rem;
             padding: 10px;
             box-shadow: none;
+            &:hover {
+               background-color: $compliment-color;
+               color: $accent-color;
+            }
          }
       }
       .image1 {
@@ -146,6 +151,10 @@ $btn-font: $sub-fontfamily;
          width: 12rem;
          padding: 10px;
          box-shadow: none;
+         &:hover {
+            background-color: $compliment-color;
+            color: $accent-color;
+         }
       }
    }
    .section2 {
@@ -168,6 +177,10 @@ $btn-font: $sub-fontfamily;
          width: 12rem;
          padding: 10px;
          box-shadow: none;
+         &:hover {
+            background-color: $compliment-color;
+            color: $accent-color;
+         }
       }
    }
    .comment {
