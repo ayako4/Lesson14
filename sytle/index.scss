@@ -1,6 +1,7 @@
 $main-color: #ffffff;
 $sub-color: #e8e8e8;
 $accent-color: #5474fd;
+$background-color: #333333;
 $main-fontfamily: "Josefin Sans", sans-serif;
 $sub-fontfamily: "Aleo", serif;
 
@@ -11,20 +12,19 @@ $sub-fontfamily: "Aleo", serif;
 }
 .header {
    &__main {
-      height: 60vh;
+      height: 80vh;
       background-image: url(../images/header.png);
       background-repeat: no-repeat;
-      //display: flex;
-      align-items: center; //
+      //display: flex;//
       flex-direction: column;
-      justify-content: center;
+      align-items: center;
       h1,
       h3,
       .scroll {
          color: $main-color;
       }
       .searchbar {
-         width: 560px;
+         width: 30wh;
       }
    }
    &__menu {
@@ -32,5 +32,51 @@ $sub-fontfamily: "Aleo", serif;
       align-items: center;
       justify-content: space-between;
       background-color: $accent-color;
+      ul {
+         display: flex;
+         justify-content: space-between;
+      }
+      li {
+         list-style: none;
+
+         a {
+            text-decoration: none;
+            color: $main-color;
+            padding: 20px;
+         }
+      }
+   }
+}
+.main {
+   .leadsin {
+      color: $sub-color;
+      background-image: url(../images/Rectangle\ 41444.png);
+      //display: flex;
+      align-items: center;
+      justify-content: space-between; //
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      padding: 20px;
+      .text {
+         grid-column: 1/2;
+         grid-row: 1/3;
+         background-color: darksalmon;
+      }
+      .image1 {
+         grid-column: 2/3;
+         grid-row: 1/2;
+      }
+      .image {
+         grid-column: 2/3;
+         grid-row: 2/3;
+      }
+   }
+   .process {
+      background-color: $background-color;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: $main-color;
    }
 }
