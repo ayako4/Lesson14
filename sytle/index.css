@@ -1,5 +1,6 @@
 .container {
   max-width: 1770px;
+  width: 100%;
   font-family: "Josefin Sans", sans-serif;
   margin: auto;
 }
@@ -38,6 +39,7 @@
   font-family: "Aleo", serif;
   -webkit-box-shadow: none;
           box-shadow: none;
+  border: none;
 }
 .header__main .searchbar button:hover {
   background-color: #fefefe;
@@ -136,6 +138,7 @@
   padding: 10px;
   -webkit-box-shadow: none;
           box-shadow: none;
+  border: none;
 }
 .main .leadsin .text input:hover {
   background-color: #fefefe;
@@ -208,6 +211,7 @@
   padding: 10px;
   -webkit-box-shadow: none;
           box-shadow: none;
+  border: none;
 }
 .main .section1 input:hover {
   background-color: #fefefe;
@@ -241,6 +245,7 @@
   padding: 10px;
   -webkit-box-shadow: none;
           box-shadow: none;
+  border: none;
 }
 .main .section2 input:hover {
   background-color: #fefefe;
@@ -340,12 +345,11 @@
 
 @media screen and (min-width: 770px) {
   .container {
-    background-color: crimson;
+    font-size: 16px;
   }
 }
 @media screen and (min-width: 320px) and (max-width: 769px) {
   .container {
-    background-color: gold;
-    font-size: 16px;
+    font-size: 12px;
   }
 }

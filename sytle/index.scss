@@ -13,6 +13,7 @@ $btn-font: $sub-fontfamily;
 
 .container {
    max-width: 1770px;
+   width: 100%;
    font-family: $main-fontfamily;
    margin: auto;
 }
@@ -42,6 +43,7 @@ $btn-font: $sub-fontfamily;
             background-color: $btn-color;
             font-family: $btn-font;
             box-shadow: none;
+            border: none;
             &:hover {
                background-color: $compliment-color;
                color: $accent-color;
@@ -81,7 +83,7 @@ $btn-font: $sub-fontfamily;
       background-image: url(../images/Rectangle\ 41444.png);
       height: 68vh;
       align-items: center;
-      justify-content: space-between; //
+      justify-content: space-between;
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 1fr 1fr;
@@ -98,6 +100,7 @@ $btn-font: $sub-fontfamily;
             width: 12rem;
             padding: 10px;
             box-shadow: none;
+            border: none;
             &:hover {
                background-color: $compliment-color;
                color: $accent-color;
@@ -151,6 +154,7 @@ $btn-font: $sub-fontfamily;
          width: 12rem;
          padding: 10px;
          box-shadow: none;
+         border: none;
          &:hover {
             background-color: $compliment-color;
             color: $accent-color;
@@ -177,6 +181,7 @@ $btn-font: $sub-fontfamily;
          width: 12rem;
          padding: 10px;
          box-shadow: none;
+         border: none;
          &:hover {
             background-color: $compliment-color;
             color: $accent-color;
@@ -239,12 +244,11 @@ $btn-font: $sub-fontfamily;
 
 @media screen and (min-width: 770px) {
    .container {
-      background-color: crimson;
+      font-size: 16px;
    }
 }
 @media screen and (min-width: 320px) and (max-width: 769px) {
    .container {
-      background-color: gold;
-      font-size: 16px;
+      font-size: 12px;
    }
 }
