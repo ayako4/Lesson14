@@ -3,7 +3,7 @@ $sub-color: #e8e8e8;
 $accent-color: #5474fd;
 $compliment-color: #fefefe;
 $background-color: #333333;
-$background-color-2: hsla(0, 0%, 14%, 0.894);
+$background-color-2: hsla(0, 0%, 14%, 0.894); //has opacity//
 $main-fontfamily: "Josefin Sans", sans-serif;
 $sub-fontfamily: "Aleo", serif;
 $fontsize-regular: 16px;
@@ -14,7 +14,7 @@ $btn-font: $sub-fontfamily;
 .container {
    max-width: 1770px;
    font-family: $main-fontfamily;
-   background-color: darkseagreen;
+   margin: auto;
 }
 .header {
    &__main {
@@ -79,7 +79,6 @@ $btn-font: $sub-fontfamily;
       color: $sub-color;
       background-image: url(../images/Rectangle\ 41444.png);
       height: 68vh;
-      //display: flex;
       align-items: center;
       justify-content: space-between; //
       display: grid;
@@ -109,14 +108,23 @@ $btn-font: $sub-fontfamily;
          grid-row: 2/3;
       }
    }
-   .process {
+   aside {
       background-color: $background-color;
       height: 34vh;
-      display: flex;
-      align-items: center;
-      justify-content: space-evenly;
-      color: $main-color;
-      font-family: $sub-fontfamily;
+      padding: 20px;
+      //couldn't find out how to overlap the shape and icons.z-index?//
+      .shape {
+         text-align: center;
+         z-index: 0;
+      }
+      .process {
+         display: flex;
+         align-items: center;
+         justify-content: space-evenly;
+         color: $main-color;
+         font-family: $sub-fontfamily;
+         z-index: 1;
+      }
    }
    .section1 {
       background-image: url(../images/section1.png);
@@ -169,6 +177,7 @@ $btn-font: $sub-fontfamily;
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 1fr 3fr;
+
       h3 {
          grid-column: 2/3;
          grid-row: 1/2;
@@ -179,9 +188,13 @@ $btn-font: $sub-fontfamily;
          grid-column: 1/2;
          grid-row: 2/3;
       }
+      i {
+         color: $accent-color;
+      }
       .comment-text {
          grid-column: 2/3;
          grid-row: 2/3;
+         background-color: $background-color;
          h4 {
             color: $compliment-color;
          }
@@ -204,5 +217,21 @@ $btn-font: $sub-fontfamily;
    .icons {
       color: $sub-color;
       padding: 10px;
+      i {
+         padding: 10px;
+      }
+      //couldn't find out how to put blue color on Linkedin icon//
+   }
+}
+
+@media screen and (min-width: 770px) {
+   .container {
+      background-color: crimson;
+   }
+}
+@media screen and (min-width: 320px) and (max-width: 769px) {
+   .container {
+      background-color: gold;
+      font-size: 16px;
    }
 }

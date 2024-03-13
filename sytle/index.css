@@ -1,7 +1,7 @@
 .container {
   max-width: 1770px;
   font-family: "Josefin Sans", sans-serif;
-  background-color: darkseagreen;
+  margin: auto;
 }
 
 .header__main {
@@ -152,9 +152,16 @@
   -ms-grid-row-span: 1;
   grid-row: 2/3;
 }
-.main .process {
+.main aside {
   background-color: #333333;
   height: 34vh;
+  padding: 20px;
+}
+.main aside .shape {
+  text-align: center;
+  z-index: 0;
+}
+.main aside .process {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -166,6 +173,7 @@
           justify-content: space-evenly;
   color: #ffffff;
   font-family: "Aleo", serif;
+  z-index: 1;
 }
 .main .section1 {
   background-image: url(../images/section1.png);
@@ -270,6 +278,9 @@
   -ms-grid-row-span: 1;
   grid-row: 2/3;
 }
+.main .comment i {
+  color: #5474fd;
+}
 .main .comment .comment-text {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
@@ -277,6 +288,7 @@
   -ms-grid-row: 2;
   -ms-grid-row-span: 1;
   grid-row: 2/3;
+  background-color: #333333;
 }
 .main .comment .comment-text h4 {
   color: #fefefe;
@@ -308,4 +320,19 @@
 .footer .icons {
   color: #e8e8e8;
   padding: 10px;
+}
+.footer .icons i {
+  padding: 10px;
+}
+
+@media screen and (min-width: 770px) {
+  .container {
+    background-color: crimson;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 769px) {
+  .container {
+    background-color: gold;
+    font-size: 16px;
+  }
 }
