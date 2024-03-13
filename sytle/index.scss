@@ -3,7 +3,7 @@ $sub-color: #e8e8e8;
 $accent-color: #5474fd;
 $compliment-color: #fefefe;
 $background-color: #333333;
-$background-color-2: #232323;
+$background-color-2: hsla(0, 0%, 14%, 0.894);
 $main-fontfamily: "Josefin Sans", sans-serif;
 $sub-fontfamily: "Aleo", serif;
 $fontsize-regular: 16px;
@@ -25,15 +25,31 @@ $btn-font: $sub-fontfamily;
       flex-direction: column;
       align-items: center;
       justify-content: center;
+
       h1,
       h3 {
          color: $main-color;
       }
-
+      .searchbar {
+         input {
+            width: 25rem;
+            padding: 10px;
+         }
+         button {
+            width: 10rem;
+            padding: 10px;
+            color: $main-color;
+            background-color: $btn-color;
+            font-family: $btn-font;
+            box-shadow: none;
+            :hover {
+               background-color: $compliment-color;
+            }
+         }
+      }
       .scroll {
          color: $main-color;
          justify-content: center;
-         background-color: darkseagreen;
       }
    }
    &__menu {
@@ -42,6 +58,7 @@ $btn-font: $sub-fontfamily;
       align-items: center;
       justify-content: space-between;
       background-color: $accent-color;
+      padding: 0 40px;
       ul {
          display: flex;
          justify-content: space-between;
@@ -68,13 +85,20 @@ $btn-font: $sub-fontfamily;
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 1fr 1fr;
-      padding: 20px;
+      padding: 0 40px;
       h2 {
          font-family: $sub-fontfamily;
       }
       .text {
          grid-column: 1/2;
          grid-row: 1/3;
+         input {
+            color: $main-color;
+            background-color: $accent-color;
+            width: 12rem;
+            padding: 10px;
+            box-shadow: none;
+         }
       }
       .image1 {
          grid-column: 2/3;
@@ -100,11 +124,20 @@ $btn-font: $sub-fontfamily;
       display: flex;
       align-items: flex-end;
       justify-content: flex-end;
+      padding: 40px;
       .section1-text {
          width: 60vh;
          height: 40vh;
          color: $sub-color;
          background-color: $background-color-2;
+         padding: 20px;
+      }
+      input {
+         color: $main-color;
+         background-color: $accent-color;
+         width: 12rem;
+         padding: 10px;
+         box-shadow: none;
       }
    }
    .section2 {
@@ -113,25 +146,48 @@ $btn-font: $sub-fontfamily;
       display: flex;
       align-items: flex-end;
       justify-content: flex-start;
+      padding: 40px;
       .section2-text {
          width: 60vh;
          height: 40vh;
          color: $sub-color;
          background-color: $background-color-2;
+         padding: 20px;
+      }
+      input {
+         color: $main-color;
+         background-color: $accent-color;
+         width: 12rem;
+         padding: 10px;
+         box-shadow: none;
       }
    }
    .comment {
       background-image: url(../images/Rectangle\ 4142\ 1.png);
       height: 73vh;
+      padding: 40px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 3fr;
       h3 {
+         grid-column: 2/3;
+         grid-row: 1/2;
          font-family: $sub-fontfamily;
          color: $main-color;
       }
-      h4 {
-         color: $compliment-color;
+      img {
+         grid-column: 1/2;
+         grid-row: 2/3;
       }
-      p {
-         color: $sub-color;
+      .comment-text {
+         grid-column: 2/3;
+         grid-row: 2/3;
+         h4 {
+            color: $compliment-color;
+         }
+         p {
+            color: $sub-color;
+         }
       }
    }
 }
