@@ -8,6 +8,7 @@
   height: 80vh;
   background-image: url(../images/header.png);
   background-repeat: no-repeat;
+  height: 80vh;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -127,4 +128,56 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   color: #ffffff;
+}
+.main .section1 {
+  background-image: url(../images/section1.png);
+  height: 80vh;
+}
+.main .section1 .section1-text {
+  color: #e8e8e8;
+  background-color: #232323;
+}
+.main .section2 {
+  background-image: url(../images/section2.png);
+  height: 70vh;
+}
+.main .section2 .section2-text {
+  color: #e8e8e8;
+  background-color: #232323;
+}
+.main .comment {
+  background-image: url(../images/Rectangle\ 4142\ 1.png);
+}
+.main .comment h3 {
+  color: #ffffff;
+}
+.main .comment h4 {
+  color: #fefefe;
+}
+.main .comment p {
+  color: #e8e8e8;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #232323;
+}
+.footer h5 {
+  color: #ffffff;
+}
+.footer .icons {
+  color: #e8e8e8;
+  padding: 10px;
 }
